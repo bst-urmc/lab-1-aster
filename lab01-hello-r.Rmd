@@ -98,7 +98,7 @@ Each of your assignments will begin with the following steps. You can always ref
 This part you will do every time you have an assignment or lab.
 
 ```{r paste-gh-repo-url, fig.margin = TRUE, echo = FALSE, fig.width=5}
-knitr::include_graphics("lab00-demonstration/img/copy-assignment-repo-link.png")
+
 ```
 
 - Click on the assignment link that you should have received in your email to create your GitHub repository (which we'll refer to as "repo" going forward) for the assignment. This repo contains a template you can build on to complete your assignment.
@@ -168,7 +168,7 @@ output:
 Open the R Markdown (Rmd) file in your project, change the author name to your name, and knit the document.
 
 ```{r yaml-raw-to-rendered, fig.fullwidth=TRUE, echo = FALSE}
-knitr::include_graphics("lab01-hello-r/img/yaml-raw-to-rendered.png")
+
 ```
 
 ## Commiting changes:
@@ -178,7 +178,7 @@ Then Go to the Git pane in your RStudio.
 If you have made changes to your Rmd file, you should see it listed here. Click on it to select it in this list and then click on **Diff**. This shows you the *diff*erence between the last committed state of the document and its current state that includes your changes. If you're happy with these changes, write "Update author name" in the **Commit message** box and hit **Commit**.
 
 ```{r update-author-name-commit, fig.fullwidth=TRUE, echo = FALSE}
-knitr::include_graphics("lab01-hello-r/img/update-author-name-commit.png")
+
 ```
 
 You don't have to commit after every change, this would get quite cumbersome. You should consider committing states that are *meaningful to you* for inspection, comparison, or restoration. In the first few assignments we will tell you exactly when to commit and in some cases, what commit message to use. As the semester progresses we will let you make these decisions.
@@ -224,6 +224,12 @@ The original Datasaurus (`dino`) was created by Alberto Cairo in [this great blo
 # Data visualization and summary
 
 2. Plot `y` vs. `x` for the `dino` dataset. Then, calculate the correlation coefficient between `x` and `y` for this dataset.
+
+
+r=-0.0645
+
+
+
 
 Below is the code you will need to complete this exercise. Basically, the answer is already given, but you need to include relevant bits in your Rmd document and successfully knit it and view the results.
 
@@ -297,7 +303,7 @@ datasaurus_dozen %>%
 You're done with the data analysis exercises, but we'd like you to do two more things:
 
 ```{r fig-resize-global, fig.margin = TRUE, echo = FALSE, fig.width=3}
-knitr::include_graphics("lab01-hello-r/img/fig-resize-global.png")
+
 ```
 
 - **Resize your figures:** 
@@ -305,7 +311,7 @@ knitr::include_graphics("lab01-hello-r/img/fig-resize-global.png")
 Click on the gear icon in on top of the R Markdown document, and select "Output Options..." in the dropdown menu. In the pop up dialogue box go to the Figures tab and change the height and width of the figures, and hit OK when done. Then, knit your document and see how you like the new sizes. Change and knit again and again until you're happy with the figure sizes. Note that these values get saved in the YAML.
 
 ```{r fig-resize-local, fig.margin = TRUE, echo = FALSE, fig.width=3}
-knitr::include_graphics("lab01-hello-r/img/fig-resize-local.png")
+
 ```
 
 You can also use different figure sizes for different figures. To do so click on the gear icon within the chunk where you want to make a change. Turn on "Use custom figure size" and enter the size for this figure. Changing the figure sizes added new options to these chunks: `fig.width` and `fig.height`. You can change them by defining different values directly in your R Markdown document as well with code like this:
@@ -315,7 +321,7 @@ knitr::opts_chunk(fig.width=3, fig.height=3)
 ```
 
 ```{r theme-highlight, fig.margin = TRUE, echo = FALSE, fig.width=3}
-knitr::include_graphics("lab01-hello-r/img/theme-highlight.png")
+
 ```
 
 - **Change the look of your report:** 
@@ -329,4 +335,5 @@ Once again click on the gear icon in on top of the R Markdown document, and sele
 
 10 points if code and descriptions are complete for all questions.
 5 points for >= five commits with informative messages made to the repo.
+
 
