@@ -226,7 +226,7 @@ The original Datasaurus (`dino`) was created by Alberto Cairo in [this great blo
 2. Plot `y` vs. `x` for the `dino` dataset. Then, calculate the correlation coefficient between `x` and `y` for this dataset.
 
 
-r=-0.0645
+      The answer is that r=-0.0645
 
 
 
